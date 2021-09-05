@@ -1,0 +1,22 @@
+﻿<Page x:Class="SelfManager_SantiagoSarabia.Pond"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SelfManager_SantiagoSarabia"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="720"
+      Title="Pond">
+    <Grid x:Name="d">
+        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="324" Foreground="#FFEA2D1F" TextAlignment="Center" FontFamily="Poppins" FontSize="30"><Run Text="Ponderacion"/><LineBreak/><Run/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="2" Margin="264,85,0,0" VerticalAlignment="Top" Width="196" Fill="#FFEA2D1F"/>
+        <TextBlock HorizontalAlignment="Left" Margin="111,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="199" Foreground="#FFEA2D1F" TextAlignment="Left" FontFamily="Poppins" FontSize="20"><Run Text="Primer parcial"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="PondOne" HorizontalAlignment="Left" Margin="445,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30" Background="{x:Null}" BorderBrush="#FFEA2D1F" Foreground="#FFFF6A00" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="111,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="199" Foreground="#FFEA2D1F" TextAlignment="Left" FontFamily="Poppins" FontSize="20"><Run Text="Segundo parcial"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="PondTwo" HorizontalAlignment="Left" Margin="445,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30" Background="{x:Null}" BorderBrush="#FFEA2D1F" Foreground="#FFFF6A00" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="111,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="199" Foreground="#FFEA2D1F" TextAlignment="Left" FontFamily="Poppins" FontSize="20"><Run Text="Tercer parcial"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="PondThree" HorizontalAlignment="Left" Margin="445,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30" Background="{x:Null}" BorderBrush="#FFEA2D1F" Foreground="#FFFF6A00" TextAlignment="Center"/>
+        <Button x:Name="PondtBtn" Content="Modificar Ponderacion" HorizontalAlignment="Left" Margin="277,483,0,0" VerticalAlignment="Top" Height="60" Width="170" BorderBrush="#FFEA2D1F" Background="{x:Null}" Foreground="#FFEA2D1F" Click="AddAssignature_Click"/>
+        <TextBlock x:Name="errorMsg" HorizontalAlignment="Left" Margin="172,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="364" Foreground="Black" TextAlignment="Center" FontFamily="Poppins" FontSize="20"><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+    </Grid>
+</Page>

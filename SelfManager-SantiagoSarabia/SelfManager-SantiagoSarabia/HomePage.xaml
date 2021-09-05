@@ -1,0 +1,58 @@
+﻿<Page x:Class="SelfManager_SantiagoSarabia.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SelfManager_SantiagoSarabia"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="720"
+      
+      Title="HomePage">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="324" Foreground="#FFEA2D1F" TextAlignment="Center" FontFamily="Poppins" FontSize="30"><Run Text="Materias"/><LineBreak/><Run/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="2" Margin="264,85,0,0" VerticalAlignment="Top" Width="196" Fill="#FFEA2D1F"/>
+        <ScrollViewer x:Name="ScrollViewer" VerticalScrollBarVisibility="Auto" Width="600" Height="400" Margin="60,135,60,65">
+            <StackPanel x:Name="Stack" Orientation="Horizontal" Width="600">
+                <StackPanel Width="120" x:Name="Assignature">
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                    <TextBlock Text="MATERIA" Height="30" TextAlignment="Center" Foreground="#FFFF6A00"/>
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                </StackPanel>
+                <StackPanel Width="120" x:Name="Note1">
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                    <TextBlock Text="NOTA 1" Height="30" TextAlignment="Center" Foreground="#FFFF6A00"/>
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+
+                </StackPanel>
+                <StackPanel Width="120" x:Name="Note2">
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                    <TextBlock Text="NOTA 2" Height="30" TextAlignment="Center" Foreground="#FFFF6A00"/>
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                </StackPanel>
+                <StackPanel Width="120" x:Name="Note3">
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                    <TextBlock Text="NOTA 3" Height="30" TextAlignment="Center" Foreground="#FFFF6A00"/>
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                </StackPanel>
+                <StackPanel Width="120" x:Name="Average">
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                    <TextBlock Text="PROMEDIO" Height="30" TextAlignment="Center" Foreground="#FFFF6A00"/>
+                    <Rectangle Fill="#FFFF6A00" Height="2"/>
+                    <Rectangle Fill="Transparent" Height="20"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock x:Name="NoAssignaturesText" HorizontalAlignment="Center" Margin="0,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="122" Width="450" Foreground="#FFFF6A00" TextAlignment="Center" FontFamily="Poppins" FontSize="30"><Run Text="No hay materias registradas, agrega una para ver tus resultados."/><LineBreak/><Run/></TextBlock>
+
+    </Grid>
+</Page>

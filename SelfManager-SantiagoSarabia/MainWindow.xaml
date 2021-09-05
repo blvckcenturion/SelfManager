@@ -1,0 +1,88 @@
+﻿<Window x:Name="Main" x:Class="SelfManager_SantiagoSarabia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SelfManager_SantiagoSarabia"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Height="600" Width="920">
+    <Window.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Button  Width="200"  Content="{TemplateBinding Property=Content}" Foreground="{TemplateBinding Property=Foreground}" FontSize="20" FontFamily="/Fonts/#Poppins" Background="Transparent" BorderThickness="0" Height="70"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Border Background="#F5F5F5" CornerRadius="35 30 30 35">
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="0" CornerRadius="30 0 0 30" Background="#171717">
+                <Grid Grid.Column="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock 
+                Grid.Row="0" 
+                HorizontalAlignment="Center"
+                Text="Calcunotas" 
+                TextWrapping="Wrap" 
+                VerticalAlignment="Center" 
+
+                FontSize="30"
+                FontFamily="/Fonts/#Bebas Neue">
+                        <TextBlock.Foreground>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStopCollection>
+                                    <GradientStop Color="#EA2B1F" Offset="0"/>
+                                    <GradientStop Color="#FF6A00" Offset="1"/>
+                                </GradientStopCollection>
+                            </LinearGradientBrush>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                    <StackPanel Grid.Row="1">
+
+                        <Button
+                Content="Inicio"
+                x:Name="HomeBtn"
+                Style="{StaticResource MenuButtonStyle }" Click="HomeBtn_Click"
+                />
+                        <Button
+                Content="Agregar"
+                Style="{StaticResource MenuButtonStyle }"
+                x:Name="AddBtn" Click="AddBtn_Click"
+                />
+                        <Button
+                Content="Ponderacion"
+                Style="{StaticResource MenuButtonStyle }"
+                x:Name="PondBtn" Click="PondBtn_Click"
+                />
+                        <Button
+                Content="Analticas"
+                Style="{StaticResource MenuButtonStyle }"
+                x:Name="AnalyticsBtn" Click="AnalitycsBtn_Click"
+                />
+
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Frame x:Name="MainContent" Grid.Column="2" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Border>
+</Window>
